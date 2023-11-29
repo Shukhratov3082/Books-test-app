@@ -10,18 +10,17 @@ const Signup = () => {
     const [secret, setSecret] = useState('');
 
     const submit = () => {
-        // console.log(name);
-        // console.log(gmail);
-        // console.log(key);
-        // console.log(secret);
+        console.log(name);
+        console.log(gmail);
+        console.log(key);
+        console.log(secret);
         const data = {
             name: name,
             email: gmail,
             key: key,
             secret: secret
         }
-
-        // axios.post('https://0001.uz/signup', data).then(res => console.log(res))
+        axios.post('https://0001.uz/signup', data).then(res => console.log(res))
     }
 
 

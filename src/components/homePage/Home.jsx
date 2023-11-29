@@ -6,11 +6,13 @@ import exit from '../images/exitIcon.svg'
 import bell from '../images/bellIcon.svg'
 import profile from '../images/profile.svg'
 import plus from '../images/plusIcon.svg'
+import axios from 'axios';
 
 const Home = () => {
-    // useEffect(() => {
-    //     axios.get('https://0001.uz/myself').then(res => console.log(res)).catch(e => console.log('catch:' + e))
-    // })
+    //axios error 401 
+    useEffect(() => {
+        axios.get('https://0001.uz/myself').then(res => console.log(res)).catch(e => console.log('catch:' + e))
+    })
     const value = () => {
         const input = document.querySelector('#input')
         input.value = ''
