@@ -121,7 +121,7 @@ const Wrapper = styled.div`
                     height: 48px;
                     border-radius: 6px;
                     font-size: 1vw;
-                    min-width: 380px;
+                    width: 380px;
                     align-items: center;
                     gap: 12px;
                     position: relative;
@@ -228,6 +228,54 @@ const Wrapper = styled.div`
             }
        
         }
+    }
+    @media (max-width:391px) {
+        header{
+            display: block;
+            .logo{
+                width: 30vw;
+            }
+            div{
+                div{
+                    margin-bottom: 12px;
+                    width: 2vw;
+                }
+            }
+            .profile{
+                img{
+                    width: 7vw;
+                }
+            }
+        }
+        main{
+            .main-head{
+                display: block;
+
+                h1{
+                    font-size: 9vw;
+                    margin-bottom: 15px;
+        
+                }
+                div{
+                    display: block;
+                  input{
+                    font-size: 4vw;
+                  }
+                    div{
+                        button{
+                        font-size: 4vw;
+                        margin-top: 12px;
+                        }
+                        .plus{
+                            top: 46%;
+                            left: 10px;
+                        }
+                    }
+            }
+            }
+          
+        }
+        
     }
 `
 const CreateBook = styled.div`
