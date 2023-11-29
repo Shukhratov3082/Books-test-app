@@ -39,6 +39,8 @@ const Home = () => {
                 </div>
 
                 <div className='profile'>
+                    <a href="/signup">Sign Up</a>
+                    <a href="/signin">Sign In</a>
                     <img src={bell} alt="" />
                     <img src={profile} alt="" />
                 </div>
@@ -148,10 +150,20 @@ const Wrapper = styled.div`
                     }
             }
         } 
-        .profile img{
-            width: 2vw;
-            cursor: pointer;
-        }  
+        .profile{
+            a{
+                text-decoration: none;
+                padding:12px 15px;
+                background-color: #fff;
+                color: black;
+                border: 1px solid black;
+                border-radius: 12px;
+            } 
+            img{
+                width: 2vw;
+                cursor: pointer;
+            }  
+        }
     }
     main{
         width: 100%;
