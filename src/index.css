@@ -16,9 +16,6 @@ body {
   background-repeat: no-repeat;
   padding: 0 9vw;
   background-size: 78vw;
-  @media (max-width:391px) {
-    background-size: cover;
-  }
 }
 
 code {
