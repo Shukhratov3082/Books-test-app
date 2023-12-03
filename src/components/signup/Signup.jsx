@@ -10,10 +10,6 @@ const Signup = () => {
     const [secret, setSecret] = useState('');
 
     const submit = () => {
-        console.log(name);
-        console.log(gmail);
-        console.log(key);
-        console.log(secret);
         const data = {
             name: name,
             email: gmail,
@@ -71,8 +67,6 @@ const Wrapper = styled.div`
         background-color: #fff;
         text-align: center;
         box-shadow: 0px 4px 32px 0px #3333332b;
-
-
             h1{
                 font-family: 'Mulish', sans-serif;
                 font-size: 3vw;
@@ -86,14 +80,14 @@ const Wrapper = styled.div`
                 display: flex;
                 align-items: center;
                 gap: 6px;
-                background-color: #fff;
-                padding: 10px 0;
-                padding-left:5vw;
                 text-align: start;
-                border-radius: 4px;
-                border: 1px solid black;
                 font-family: 'Mulish', sans-serif;
                 font-size: 1.1vw;
+                background-color: #fff;
+                border-radius: 4px;
+                border: 1px solid black;
+                padding: 10px 0;
+                padding-left:5vw;
             }
             .google{
                 margin-bottom: 16px;
